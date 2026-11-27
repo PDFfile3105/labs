@@ -117,8 +117,7 @@ public class PriorityQueueImpl implements PriorityQueue<Integer> {
 
         heap.set(i, itemJ);
         heap.set(j, itemI);
-
-        // Синхронно обновляем позиции в блокноте
+        
         pos.set((int) itemJ.operation, i);
         pos.set((int) itemI.operation, j);
     }
