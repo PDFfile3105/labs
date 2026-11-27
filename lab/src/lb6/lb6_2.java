@@ -1,4 +1,4 @@
-package lapa6;
+package laba6;
 
 public class lb6_2
 {
@@ -11,9 +11,9 @@ public class lb6_2
         {
             long mid = left + (right - left) / 2;
 
-            long colonkis = mid / w;
-            long stroki = mid / h;
-            if (colonkis * stroki >= n)
+            long col = mid / w;
+            long str = mid / h;
+            if (col * str >= n)
                 right = mid;
             else
                 left = mid + 1;
